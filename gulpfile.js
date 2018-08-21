@@ -59,13 +59,16 @@ gulp.task('sass', function () {
     var plugins = [
         autoprefixer({browsers: [
             'last 3 version',
-            'safari 6',
-            'ie 9',
-            'ie 10',
-            'ie >= 11',
-            'opera 12.1',
-            'ios 6',
-            'android 4'
+            'Chrome >= 35',
+            'Firefox >= 38',
+            'Edge >= 10',
+            'Explorer >= 10',
+            'ie >= 10',
+            'iOS >= 8',
+            'Safari >= 8',
+            'Android 2.3',
+            'Android >= 4',
+            'Opera >= 12'
         ]}),
         cssnano()
     ];

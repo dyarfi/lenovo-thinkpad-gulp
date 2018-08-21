@@ -202,7 +202,34 @@ var $window = $(window),
 					var itemHead = item.find('.owl-caption > h1,h2,h3,h4').addClass('d-none');
 					// Item Content
 					var itemContent = item.find('.owl-caption > p').addClass('d-none');
-				});
+                });
+                
+                var owlVideo = $(".video-carousel").owlCarousel({
+					animateOut:'fadeOut',
+					animateIn:'fadeIn',
+					items:1,
+					//dotsEach:1,
+					// dotData:function(evt) {
+					    // return evt.item.index;
+					// },
+					dotData:1,
+					dotsEach:1,
+					// dotsContainer:"btn btn-danger rounded-circle",
+					autoplay:true,
+					loop:1,
+					margin:0,
+					mouseDrag:true,
+					touchDrag:false,
+					pullDrag:false,
+					autoHeight:false,
+					// nav:false,
+					// navText:['<span class="text-dark">&laquo; Prev</span>','<span class="text-dark">Next &raquo;</span>'],
+                    responsive:true,
+                    smartSpeed:600,
+                    autoplaySpeed:900,
+					stagePadding:0
+                });
+                
 				// setInterval(function () {
 				// 	$(".owl-carousel").each(function () {
 				// 	  $(this).data('owlCarousel').autoHeight();
