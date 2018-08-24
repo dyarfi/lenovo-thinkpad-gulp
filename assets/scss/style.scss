@@ -4173,11 +4173,11 @@ blockquote {
 }
 .benny-kol {
     padding-top: 1.4rem;
-    padding-bottom: 1.4rem;
+    padding-bottom: 2.8rem;
     position: relative;
     @include media-breakpoint-between(xs,md) {
         padding-top: .8rem;
-        padding-bottom: 1rem;
+        padding-bottom: 4.2rem;
     }
 	a.btn-play-video {
         // margin: 0 auto;
@@ -4207,11 +4207,14 @@ blockquote {
             // left: 50%;
             // top: 15%;
             top: 60%;
-            left: 40%;
+            left: 45%;
             margin-top:0rem; 
             margin-bottom:0rem; 
             // bottom: 0;
-            // right: 1%;        
+            // right: 1%;
+            img {
+                width:40px;
+            }
         }
         @media (min-width:319.98px) and (max-width:374.98px){
             top: 63%;
@@ -4237,9 +4240,9 @@ blockquote {
 		@include media-breakpoint-down(md) {
             top: 40%;
             left:0%;
-            img {
-                height:40px;
-            }
+            // img {
+            //     height:40px;
+            // }
 		}
 	}
 	.benny-kol__boxed_one, .benny-kol__boxed_two {
@@ -4294,12 +4297,16 @@ blockquote {
 	}
 }
 .robot-kv {
-    padding-top: 1.4rem;
-    padding-bottom: 1.4rem;
+    // padding-top: 1.4rem;
+    // padding-bottom: 1.4rem;
     position: relative;
+    @include media-breakpoint-only(lg) {
+        padding-top: 0rem;        
+        padding-bottom: 0rem;
+    }
     @include media-breakpoint-between(xs,md) {
         padding-top: .8rem;
-        padding-bottom: 1rem;
+        padding-bottom: .25rem;
     }
     a.btn-play-video {
         // margin: 0 auto;
@@ -4329,17 +4336,20 @@ blockquote {
             // left: 50%;
             // top: 15%;
             top: 60%;
-            left: 40%;
+            left: 45%;
             margin-top:0rem; 
             margin-bottom:0rem; 
             // bottom: 0;
-            // right: 1%;        
+            // right: 1%;
+            img {
+                width:40px;
+            }
         }
         @media (min-width:319.98px) and (max-width:374.98px){
             top: 63%;
         }
         @media (min-width:374.98px) and (max-width: 425.98px) {
-            top: 56%;
+            top: 68%;
         }
         
         // @include media-breakpoint-down(xs) {
