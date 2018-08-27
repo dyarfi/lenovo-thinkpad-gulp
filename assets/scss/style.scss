@@ -4172,9 +4172,11 @@ blockquote {
 	// display: none;
 }
 .benny-kol {
-    padding-top: 1.4rem;
-    padding-bottom: 2.8rem;
+    // padding-top: 1.4rem;
+    // padding-bottom: 2.8rem;
     position: relative;
+    height: 450px;
+    overflow: hidden;
     @include media-breakpoint-between(xs,md) {
         padding-top: .8rem;
         padding-bottom: 4.2rem;
@@ -4217,10 +4219,10 @@ blockquote {
             }
         }
         @media (min-width:319.98px) and (max-width:374.98px){
-            top: 63%;
+            top: 73%;
         }
         @media (min-width:374.98px) and (max-width: 425.98px) {
-            top: 56%;
+            top: 56.5%;
         }
         
         // @include media-breakpoint-down(xs) {
@@ -4252,11 +4254,13 @@ blockquote {
 		}
 	}
 	.benny-kol__boxed_one {
-		padding:35px;
+        padding:35px;
+        @include media-breakpoint-between(md,lg) { 
+			padding: 10px 5px;
+            margin-top:.75rem;
+        }
 		@include media-breakpoint-between(xs,md) {
-			padding: 10px 5px 10px 5px;
-			margin-top:.5rem;
-			// margin-left:.5rem;
+			padding: 8px 5px 8px 5px;
 		}
 	}
 	.benny-kol__boxed_two {
@@ -4275,24 +4279,15 @@ blockquote {
 		background-color: transparent;
 		background-position:top center;
 		background-repeat:no-repeat;
-		// -ms-background-size: cover;
-		// -o-background-size: cover;
-		// -moz-background-size: cover;
-		// -webkit-background-size: cover;
 		background-size: cover;
 		width:100%;
 	}
 	@include media-breakpoint-between(xs,md) {
 		background:url('../img/kol-home-slider-benny-mb.jpg');
 		background-color: transparent;
-		background-position:center center;
+		background-position:top center;
 		background-repeat:no-repeat;
-		// -ms-background-size: cover;
-		// -o-background-size: cover;
-		// -moz-background-size: cover;
-		// -webkit-background-size: cover;
 		background-size: cover;
-		// height:600px;
 		width:100%;
 	}
 }
@@ -4300,6 +4295,7 @@ blockquote {
     // padding-top: 1.4rem;
     // padding-bottom: 1.4rem;
     position: relative;
+    height: 450px;
     @include media-breakpoint-only(lg) {
         padding-top: 0rem;        
         padding-bottom: 0rem;
@@ -4346,10 +4342,10 @@ blockquote {
             }
         }
         @media (min-width:319.98px) and (max-width:374.98px){
-            top: 63%;
+            top: 68%;
         }
         @media (min-width:374.98px) and (max-width: 425.98px) {
-            top: 68%;
+            top: 60%;
         }
         
         // @include media-breakpoint-down(xs) {
@@ -4386,24 +4382,15 @@ blockquote {
 		background-color: transparent;
 		background-position:top center;
 		background-repeat:no-repeat;
-		// -ms-background-size: cover;
-		// -o-background-size: cover;
-		// -moz-background-size: cover;
-		// -webkit-background-size: cover;
 		background-size: cover;
 		width:100%;
 	}
 	@include media-breakpoint-between(xs,md) {
 		background:url('../img/kv-robotic-thumbnail-mb.jpg');
 		background-color: transparent;
-		background-position:center center;
+		background-position:top center;
 		background-repeat:no-repeat;
-		// -ms-background-size: cover;
-		// -o-background-size: cover;
-		// -moz-background-size: cover;
-		// -webkit-background-size: cover;
 		background-size: cover;
-		// height:600px;
 		width:100%;
 	}
 }
